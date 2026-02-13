@@ -10,40 +10,45 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Kontakt & Termin | Majolie Afroshop Mönchengladbach</title>
+        <title>Kontakt & Termin | The Gentleman's Cut Berlin</title>
         <meta 
           name="description" 
-          content="Kontaktieren Sie Majolie Afroshop in Mönchengladbach. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Di-Fr 10-18 Uhr, Sa 09-17 Uhr." 
+          content="Kontaktieren Sie The Gentleman's Cut in Berlin. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-20 Uhr, Sa 10-18 Uhr." 
         />
-        <link rel="canonical" href="https://majolie-afroshop.de/kontakt" />
+        <link rel="canonical" href="https://gentlemanscut.de/kontakt" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HairSalon",
-            "name": "Majolie Afroshop",
-            "url": "https://majolie-afroshop.de",
-            "logo": "https://majolie-afroshop.de/images/logo.png",
-            "image": "https://majolie-afroshop.de/images/shop.jpg",
-            "telephone": "+49 176 24316809",
+            "@type": "Barbershop",
+            "@id": "https://example-barbershop.at/#barbershop",
+            "name": "Beispiel Barbershop Wien",
+            "url": "https://example-barbershop.at",
+            "logo": "https://example-barbershop.at/images/logo.png",
+            "image": "https://example-barbershop.at/images/shop.jpg",
+            "telephone": "+43 1 2345678",
             "priceRange": "€€",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Waldhausener Str. 86",
-              "addressLocality": "Mönchengladbach",
-              "postalCode": "41061",
-              "addressCountry": "DE"
+              "streetAddress": "Musterstraße 12",
+              "addressLocality": "Wien",
+              "postalCode": "1020",
+              "addressCountry": "AT"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "51.1947",
-              "longitude": "6.4297"
+              "latitude": "48.2167",
+              "longitude": "16.3958"
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Wien"
             },
             "openingHoursSpecification": [
               {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "10:00",
-                "closes": "18:00"
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "19:00"
               },
               {
                 "@type": "OpeningHoursSpecification",
@@ -53,9 +58,9 @@ const Contact = () => {
               }
             ],
             "sameAs": [
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5000.270875914649!2d6.436245093579114!3d51.198156000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ad3b98f061ef%3A0x95e6b1b23814b28d!2sDavid%20Friseursalon!5e0!3m2!1sde!2sde!4v1770993830018!5m2!1sde!2sde",
-              "https://www.instagram.com/majolieafroshop",
-              "https://www.facebook.com/majolieafroshop"
+              "https://www.google.com/maps?cid=1234567890",
+              "https://www.instagram.com/beispielbarbershop",
+              "https://www.facebook.com/beispielbarbershop"
             ]
           })}
         </script>
@@ -131,10 +136,10 @@ const Contact = () => {
                       Oder rufen Sie uns direkt an:
                     </p>
                     <a 
-                      href="tel:017624316809" 
+                      href="tel:017670029407" 
                       className="block text-center text-primary font-semibold mt-2 hover:underline"
                     >
-                      0176 24316809
+                      017670029407
                     </a>
                   </div>
 
@@ -184,7 +189,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Adresse</h3>
                         <p className="text-muted-foreground">
-                          Waldhausener Str. 86<br />
+                          Hindenburgstraße 229 b<br />
                           41061 Mönchengladbach
                         </p>
                       </div>
@@ -197,10 +202,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Telefon</h3>
                         <a 
-                          href="tel:017624316809" 
+                          href="tel:017670029407" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          0176 24316809
+                          017670029407
                         </a>
                       </div>
                     </div>
@@ -212,10 +217,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">E-Mail</h3>
                         <a 
-                          href="mailto:info@majolie-afroshop.de" 
+                          href="mailto:info@gentlemanscut.de" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          info@majolie-afroshop.de
+                          info@mustershop.de
                         </a>
                       </div>
                     </div>
@@ -227,9 +232,9 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Öffnungszeiten</h3>
                         <ul className="text-muted-foreground space-y-1 text-sm">
-                          <li>Di - Fr: 10:00 - 18:00</li>
+                          <li>Mo - Fr: 9:00 - 19:00</li>
                           <li>Samstag: 9:00 - 17:00</li>
-                          <li>Mo & So: Geschlossen</li>
+                          <li>Sonntag: Geschlossen</li>
                         </ul>
                       </div>
                     </div>
@@ -244,7 +249,7 @@ const Contact = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Standort Majolie Afroshop"
+                      title="Standort The Gentleman's Cut"
                     />
                   </div>
                 </div>
